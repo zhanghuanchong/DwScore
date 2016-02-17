@@ -1,0 +1,42 @@
+﻿body{
+    font-family: Arial, 宋体;
+    text-align:center;
+    font-size:small;
+}
+#loginbox{
+    border:solid 1px #aaa;
+    width:400px;
+    padding:10px;
+    background-color:#eee;
+    margin:0 auto;
+    margin-top:10px;
+}
+#host{
+    text-align:right;
+    width:400px;
+    margin:0 auto;
+    margin-top:5px;
+    font-size:smaller;
+}
+#systemName{
+    font-weight:bold;
+    font-size:larger;
+    padding:5px;
+    margin-top:5px;
+}
+#loginbox ul{
+    list-style-type:none;
+}
+#loginbox ul li{
+    padding:5px;
+}
+input,select{
+    width:150px;
+    border:solid 1px #aaa;
+}
+#bSubmit{
+    border:solid 1px #555;
+    background-color:#555;
+    margin-top:10px;
+    color:White;
+}

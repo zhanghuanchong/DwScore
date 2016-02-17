@@ -1,0 +1,116 @@
+﻿body{
+    font-family: Arial, 宋体;
+    text-align:center;
+    font-size:small;
+}
+#adminCenter{
+    border:solid 1px #36c;
+    width:700px;
+    padding:10px;
+    background-color:#e5ecf9;
+    margin:0 auto;
+    margin-top:10px;
+}
+#moduleName{
+    font-size:larger;
+    font-weight:bold;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+#message{
+    border:solid 1px red;
+    background-color:#ffa;
+    padding:5px;
+    margin:5px;
+    color:Red;
+    font-weight:bold;
+    display:none;
+}
+table{
+    margin:0 auto;
+    border-top:solid 1px #a6c9e2;
+    border-left:solid 1px #a6c9e2;
+    text-align:left;
+    font-size:smaller;
+}
+#adminboxhead{
+    background:#36c;
+    color:White;
+    font-weight:bold;
+}
+td{
+    border-bottom:solid 1px #a6c9e2;
+    border-right:solid 1px #a6c9e2;
+    padding:3px 5px;
+}
+#admindiv{
+    overflow:auto;
+    height:200px;
+}
+#host{
+    text-align:right;
+    width:700px;
+    margin:0 auto;
+    margin-top:10px;
+    color:#36c;
+    font-size:smaller;
+}
+#systemName{
+    font-weight:bold;
+    font-size:larger;
+    padding:5px;
+    color:#36c;
+    margin-top:5px;
+}
+input{
+    border:solid 1px silver;
+    background-color:White;
+    color:Black;
+}
+input.button{
+    border-top:solid 2px #72b9d7;
+    border-left:solid 2px #72b9d7;
+    border-bottom:solid 2px #0178ae;
+    border-right:solid 2px #0178ae;
+    background-color:#2e90bd;
+    color:White;
+    font-size:medium;
+}
+h3{
+    text-align:left;
+}
+h3 a{
+    text-decoration:none;
+    color:#0178ae;
+}
+#tabs-1 table{
+    width:650px;
+}
+.tableHead{
+    background-color:#e5ecf9;
+}
+#sysinfo{
+    background-color:#e5ecf9;
+}
+.tip{
+    color:Red;
+}
+.fieldset{
+    display:none;
+    text-align:left;
+}
+label{
+    display:block;
+}
+.add{
+    text-align:right;
+    color:#0178ae;
+    cursor:pointer;
+    font-size:small;
+}
+fieldset{
+    margin-top:10px;
+}
+legend{
+    color:#666;
+}
