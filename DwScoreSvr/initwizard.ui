@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InitWizard</class>
+ <widget class="QWizard" name="InitWizard">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>打分系统初始化向导</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::AeroStyle</enum>
+  </property>
+  <widget class="QWizardPage" name="pageConfig">
+   <property name="title">
+    <string>系统信息</string>
+   </property>
+   <property name="subTitle">
+    <string>在下面的文本框中输入系统的信息。带*号的表示该项不能为空。</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+    </property>
+    <property name="horizontalSpacing">
+     <number>20</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelSystemName">
+      <property name="text">
+       <string>比赛名称(*)：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="editSystemName"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="labelSystemNameE">
+      <property name="text">
+       <string>比赛名称英文：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="editSystemNameE"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelOrganizers">
+      <property name="text">
+       <string>主办单位：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="editOrganizers"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="labelOrganizersE">
+      <property name="text">
+       <string>主办单位英文：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelContractors">
+      <property name="text">
+       <string>承办单位：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="editContractors"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="labelContractorsE">
+      <property name="text">
+       <string>承办单位英文：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="editContractorsE"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="labelTime">
+      <property name="text">
+       <string>比赛日期：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="editTime"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="labelTimeE">
+      <property name="text">
+       <string>比赛日期英文：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="editTimeE"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="labelPlace">
+      <property name="text">
+       <string>比赛地点：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="editPlace"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="labelPlaceE">
+      <property name="text">
+       <string>比赛地点英文：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="editPlaceE"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="labelAdmin">
+      <property name="text">
+       <string>管理员密码(*)：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="editAdmin"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="labelShow">
+      <property name="text">
+       <string>展示端密码(*)：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="editShow"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QTextEdit" name="editOrganizersE"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="pageJury">
+   <property name="title">
+    <string>评委信息</string>
+   </property>
+   <property name="subTitle">
+    <string>在下面的表格中编辑评委信息。至少要有一位评委。</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableJury">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>登录名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>密码</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnJuryAdd">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnJuryDel">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="pagePlayer">
+   <property name="title">
+    <string>选手信息</string>
+   </property>
+   <property name="subTitle">
+    <string>在下面的表格中输入选手信息。至少要有一位选手。</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTableWidget" name="tablePlayer">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>演讲题目</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>场次</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPlayerAdd">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPlayerDel">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="pageLunci">
+   <property name="title">
+    <string>轮次信息</string>
+   </property>
+   <property name="subTitle">
+    <string>在下面的表格中输入轮次信息，如预赛、决赛等。至少要有一轮。</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QTableWidget" name="tableLunci">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>场次数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>晋级人数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLunciAdd">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLunciDel">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="pageHuanjie">
+   <property name="title">
+    <string>环节信息</string>
+   </property>
+   <property name="subTitle">
+    <string>在下面的表格中输入环节信息，如演讲，提问等。每轮应当有一个及以上的环节。</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QTableWidget" name="tableHuanjie">
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>所属轮次</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>比赛时间（秒）</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>提醒时间（秒）</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>警告时间（秒）</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最小分值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最大分值</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>序号</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnHuanjieAdd">
+        <property name="text">
+         <string>添加</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnHuanjieDel">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
