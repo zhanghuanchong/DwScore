@@ -8,6 +8,19 @@ This product includes tree sides: control/server side, presenting side, client s
 
 # 控制端
 
+![](https://raw.githubusercontent.com/zhanghuanchong/DwScore/master/images/3.png)
+
+![](https://raw.githubusercontent.com/zhanghuanchong/DwScore/master/images/4.png)
+
 # 展示端
 
+![](https://raw.githubusercontent.com/zhanghuanchong/DwScore/master/images/2.png)
+
 # 裁判端
+
+![](https://raw.githubusercontent.com/zhanghuanchong/DwScore/master/images/1.png)
+
+
+# License
+
+MIT
